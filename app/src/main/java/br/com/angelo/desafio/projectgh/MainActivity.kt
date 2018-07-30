@@ -14,6 +14,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.add(R.id.fragment_container, ItemFragment ())
+        transaction.commit()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -26,9 +30,11 @@ class MainActivity : AppCompatActivity() {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
+
         return when (item.itemId) {
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
         }
     }
+
 }
