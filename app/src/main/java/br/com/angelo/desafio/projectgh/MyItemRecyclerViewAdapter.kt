@@ -10,7 +10,7 @@ import android.widget.TextView
 import br.com.angelo.desafio.projectgh.ItemFragment.OnListFragmentInteractionListener
 import br.com.angelo.desafio.projectgh.dummy.DummyContent.DummyItem
 
-import kotlinx.android.synthetic.main.fragment_item.view.*
+import kotlinx.android.synthetic.main.fragment_repository_pulls.view.*
 
 /**
  * [RecyclerView.Adapter] that can display a [DummyItem] and makes a call to the
@@ -35,7 +35,8 @@ class MyItemRecyclerViewAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-                .inflate(R.layout.fragment_item, parent, false)
+                .inflate(R.layout.fragment_repository_pulls, parent, false)
+
         return ViewHolder(view)
     }
 

@@ -22,7 +22,7 @@
     </android.support.design.widget.AppBarLayout>
 
     <!--<include layout="@layout/content_main" />-->
-    <!--<include layout="@layout/fragment_item_list" />-->
+    <!--<include layout="@layout/fragment_repositories_list" />-->
 
     <FrameLayout
         android:id="@+id/fragment_container"
@@ -32,6 +32,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout="@layout/fragment_item_list"/>
+        tools:layout="@layout/fragment_repositories_list"/>
 
 </android.support.design.widget.CoordinatorLayout>
